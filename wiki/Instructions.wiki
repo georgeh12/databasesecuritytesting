@@ -27,9 +27,14 @@ It does not matter where you install ActivePerl, but you need the location of th
 
 4. Install the EPIC plug-in for Eclipse.
      1. In Eclipse, open the "Help" menu and click "Install New Software...".
+
      2. Click "Add" at the top right of the window.
+
      3. Give the plug-in a name and enter "http://e-p-i-c.sf.net/updates/testing" as the location.
+
      4. Select the check box next to "EPIC Main Components".
+
      5. Install the plug-in. Restart Eclipse when you are prompted to do so.
+
 
 5. Install Perl into EPIC. In Eclipse, open the "Window" menu and click "Preferences". From the left menu, select "Perl EPIC". In the box labeled "Perl executable:" enter the location of the Perl executable from Step 3. For my installation it was "C:\Perl64\bin\perl5.10.0.exe". Click OK to save these settings. 
