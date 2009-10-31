@@ -2,6 +2,8 @@
 include 'config.php';
 include 'opendb.php';
 
+#comment
+
 $query  = 'CREATE DATABASE phpcake';
 $result = mysql_query($query);
 
