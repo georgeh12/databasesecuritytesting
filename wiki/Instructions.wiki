@@ -29,4 +29,15 @@ It was a real pain trying to install all the plug-ins for Eclipse, so this shoul
   * From the left menu, select "Perl EPIC".
   * In the box labeled "Perl executable:" enter the location of the Perl executable from Step 3.
   * For my installation it was "C:\Perl64\bin\perl5.10.0.exe".
-  * Click OK to save these settings. 
+  * Click OK to save these settings.
+ # Install the Subclipse plug-in for Eclipse.
+  * Follow the same instructions in from Step 4, but use "http://subclipse.tigris.org/update_1.6.x" as the "Location"
+  * Select the check box next to "Subclipse".
+  * Install the plug-in. Restart Eclipse when you are prompted to do so.
+ # Synchronize with repository.
+  * In Eclipse, click "File" and select "Import".
+  * Click "SVN" and select "Checkout Projects from SVN", and click "Next".
+  * Select "Create a new repository location" and click "Next".
+  * Enter *https://databasesecuritytesting.googlecode.com/svn/trunk/* and click *Next*.
+  * Select the project you want to open and click *Finish*.
+  * When you are prompted for your username and password, enter your gmail username and the _googlecode_ password. This can be found by clicking *Source* on this page, then clicking *googlecode.com password* on that page.
