@@ -30,7 +30,7 @@ All of the text that appears in _italics_ indicates that it is exactly how the i
   * In Eclipse, open the _Window_ menu and click _Preferences_.
   * From the left menu, select _Perl EPIC_.
   * In the box labeled _Perl executable:_ enter the location of the Perl executable from Step 3.
-  * For my installation it was _C:\Perl64\bin\perl5.10.0.exe_.
+  * For my installation it was _C:\Perl64\bin\perl.exe_.
   * Click OK to save these settings.
  # Install the Subclipse plug-in for Eclipse.
   * Follow the same instructions in from Step 4, but use _http://subclipse.tigris.org/update_1.6.x _as the _Location_
