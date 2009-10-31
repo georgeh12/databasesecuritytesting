@@ -36,21 +36,29 @@ All of the text that appears in _italics_ indicates that it is exactly how the i
   * Follow the same instructions in from Step 4, but use _http://subclipse.tigris.org/update_1.6.x _as the _Location_
   * Select the check box next to _Subclipse_.
   * Install the plug-in. Restart Eclipse when you are prompted to do so.
- # Synchronize with repository.
+ # Checkout from the repository.
   * In Eclipse, click _File_ and select _Import_.
   * Click _SVN_ and select _Checkout Projects from SVN_, and click _Next_.
   * Select _Create a new repository location_ and click _Next_.
   * Enter _https://databasesecuritytesting.googlecode.com/svn/trunk/ _and click _Next_.
   * Select the project you want to open and click _Finish_.
   * When you are prompted for your username and password, enter your gmail username and the _googlecode_ password. This can be found by clicking _Source_ on this page, then clicking _googlecode.com password_ on that page.
+ # Synchronize with repository.
+  * Right-click your updated project.
+  * Click _Team_ and select _Synchronize with Repository_.
+ # Revert changes back to the repository version.
+  * Right-click your updated project/file.
+  * Click _Team_ and select _Revert..._.
+  * Select the files you wish to revert to saved.
+  * Click _OK_ to revert changes.
  # Commit a new project to the repository.
   * Right-click your new project
   * Click _Team_ and select _Share Project..._.
   * Select _SVN_ and click _Next_.
   * Select _Use existing repository location:_ and click _Next_.
   * Click _Finish_ to upload your new project.
- # Commit an updated project to the repository.
-  * Right-click your new project
+ # Commit an updated project/file to the repository.
+  * Right-click your updated project/file.
   * Click _Team_ and select _Commit_.
   * Enter a comment describing what you have updated.
   * Click _OK_ to commit changes.
