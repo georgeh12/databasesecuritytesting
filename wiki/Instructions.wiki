@@ -11,7 +11,7 @@ All of the text that appears in _italics_ indicates that it is exactly how the i
 = Instructions =
 
  # Download and install [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/SR1/eclipse-php-galileo-SR1-win32.zip Eclipse PHP]
-  * I recommend downloading using BitTorrent. After downloading, unzip and place the eclipse folder wherever you choose.
+  * I recommend downloading using [http://www.utorrent.com/ BitTorrent]. After downloading, unzip and place the eclipse folder wherever you choose.
  # Install the javaw path (using cmd.exe in Windows OS). You must be in the eclipse directory before running the command. In dos this means typing:
   cd %eclipse_path%
   * _%eclipse_path%_ is the absolute path to the eclipse directory. Once you are in the directory, enter the following instruction:
