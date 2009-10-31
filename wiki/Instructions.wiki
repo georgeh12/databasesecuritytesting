@@ -5,6 +5,8 @@
 
 It was a real pain trying to install all the plug-ins for Eclipse, so this should simplify the process. Please add to this page if you install other plug-ins for your code.
 
+All of the text that appears in _italics_ indicates that it is exactly how the interface describes a button, etc.
+
 
 = Instructions =
 
