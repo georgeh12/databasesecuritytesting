@@ -18,7 +18,7 @@ All of the text that appears in _italics_ indicates that it is exactly how the i
   eclipse -vm %javapath%\javaw.exe
   * _%javapath%_ could be something like _C:\jdk1.4.2\jre\bin_. I am running Windows Vista and it was installed to _C:\Windows\System32_. Just do a search if you can't find it.
   * Now Eclipse should open. Set up your workspace directory.
- # Download and install the [http://downloads.activestate.com/ActivePerl/ ActivePerl] for your OS:
+ # Download and install the [http://downloads.activestate.com/ActivePerl/ ActivePerl] for your OS (be sure to download v8.x):
   * It does not matter where you install to, but you need the location of the executable later.
  # Install the EPIC plug-in for Eclipse.
   * In Eclipse, open the _Help_ menu and click _Install New Software..._.
