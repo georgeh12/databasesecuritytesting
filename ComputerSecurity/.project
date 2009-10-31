@@ -3,6 +3,7 @@
 	<name>ComputerSecurity</name>
 	<comment></comment>
 	<projects>
+		<project>epic_links</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
