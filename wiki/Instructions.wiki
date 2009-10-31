@@ -17,7 +17,7 @@ It was a real pain trying to install all the plug-ins for Eclipse, so this shoul
   * %javapath% could be something like "c:\jdk1.4.2\jre\bin". I am running Windows Vista and it was installed to "C:\Windows\System32". Just do a search if you can't find it.
   * Now Eclipse should open. Set up your workspace directory.
  # Download and install the [http://ppm4.activestate.com/ ActivePerl] for your OS:
-  * It does not matter where you install ActivePerl, but you need the location of the executable later.
+  * It does not matter where you install to, but you need the location of the executable later.
  # Install the EPIC plug-in for Eclipse.
   * In Eclipse, open the "Help" menu and click "Install New Software...".
   * Click "Add" at the top right of the window.
