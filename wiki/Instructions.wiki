@@ -20,6 +20,10 @@ All of the text that appears in _italics_ indicates that it is exactly how the i
   * Now Eclipse should open. Set up your workspace directory.
  # Download and install the [http://downloads.activestate.com/ActivePerl/ ActivePerl] for your OS (be sure to download v5.8.x, because it has a working PPM):
   * It does not matter where you install to, but you need the location of the executable later.
+  * Using a terminal (cmd), open the installation folder and go into the bin folder.
+  * Enter the following commands:
+   * ppm install DBI
+   * ppm install http://theoryx5.uwinnipeg.ca/ppms/DBD-mysql.ppd
  # Install the EPIC plug-in for Eclipse.
   * In Eclipse, open the _Help_ menu and click _Install New Software..._.
   * Click _Add_ at the top right of the window.
