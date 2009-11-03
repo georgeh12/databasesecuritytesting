@@ -1,6 +1,9 @@
+	use DBI;
+	
 	# Connect to the database.
-	my $dbh = DBI->connect("dbi:mysqlPP:database=test;host=localhost",
-	"joe", "joe's password");
+	$dbh = DBI->connect("dbi:mysql:database=test;host=localhost", "root", "password") ||
+  	die "Got error $DBI::errstr when connecting to $dbh\n";
+	
 	
 	# Drop table 'foo'. This may fail, if 'foo' doesn't exist.
 	# Thus we put an eval around it.
