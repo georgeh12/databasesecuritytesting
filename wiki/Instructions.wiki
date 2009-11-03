@@ -24,6 +24,10 @@ All of the text that appears in _italics_ indicates that it is exactly how the i
   * Enter the following commands:
    * ppm install DBI
    * ppm install http://theoryx5.uwinnipeg.ca/ppms/DBD-mysql.ppd
+ # Download and install [http://dev.mysql.com/downloads/mysql/5.1.html#downloads MySQL Community Server] for your OS.
+  * Remember the password you use for root access, you will need it to access the database.
+  * Run the MySQL command line client.
+  * Open a new database using the command _\u %databaseName%_
  # Install the EPIC plug-in for Eclipse.
   * In Eclipse, open the _Help_ menu and click _Install New Software..._.
   * Click _Add_ at the top right of the window.
