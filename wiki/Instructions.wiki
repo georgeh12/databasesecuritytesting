@@ -13,7 +13,7 @@ All of the text that appears in _italics_ indicates that it is exactly how the i
  # Download and install [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/SR1/eclipse-php-galileo-SR1-win32.zip Eclipse PHP]
   * I recommend downloading using [http://www.utorrent.com/ BitTorrent]. After downloading, unzip and place the eclipse folder wherever you choose.
  # Install the javaw path.
-  * Find the eclipse.ini, and append the following string to the file (there must be a line break after _-vm_):
+  * Find the eclipse.ini, and append the following string to the first line of the file (there must be a line break after _-vm_):
      -vm
       %javapath%\javaw.exe
   * _%javapath%_ could be something like _C:\jdk1.4.2\jre\bin_. I am running Windows Vista and it was installed to _C:\Windows\System32_. Just do a search if you can't find it.
