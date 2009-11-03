@@ -12,10 +12,9 @@ All of the text that appears in _italics_ indicates that it is exactly how the i
 
  # Download and install [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/SR1/eclipse-php-galileo-SR1-win32.zip Eclipse PHP]
   * I recommend downloading using [http://www.utorrent.com/ BitTorrent]. After downloading, unzip and place the eclipse folder wherever you choose.
- # Install the javaw path (using cmd.exe in Windows OS). You must be in the eclipse directory before running the command. In dos this means typing:
-  cd %eclipse_path%
-  * _%eclipse_path%_ is the absolute path to the eclipse directory. Once you are in the directory, enter the following instruction:
-  eclipse -vm %javapath%\javaw.exe
+ # Install the javaw path.
+  * Find the eclipse.ini, and append the following string to the file:
+     -vm %javapath%\javaw.exe
   * _%javapath%_ could be something like _C:\jdk1.4.2\jre\bin_. I am running Windows Vista and it was installed to _C:\Windows\System32_. Just do a search if you can't find it.
   * Now Eclipse should open. Set up your workspace directory.
  # Download and install the [http://downloads.activestate.com/ActivePerl/ ActivePerl] for your OS (be sure to download v5.8.x, because it has a working PPM):
