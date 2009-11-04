@@ -18,6 +18,16 @@
 	
 	# add values
 	$dbh->do("INSERT INTO foo VALUES (?, ?, ?)", undef, "george", "gpass", 1);
+	$dbh->do("INSERT INTO foo VALUES (?, ?, ?)", undef, "bob", "bpass", 2);
+	
+	### INSERT some data into 'foo'###
+	
+	#We are using $dbh->quote() for quoting the name.
+	$dbh->do("INSERT INTO foo VALUES (1, " . $dbh->quote("Tim") . ")");
+	
+	# Same thing, but using placeholders
+	$dbh->do("INSERT INTO foo VALUES (?, ?)", undef, 2, "Jochen");
+	
 	
 	###SQL Injectable Code###
 	
@@ -28,15 +38,6 @@
 	$sth->execute;
 	while (my $ref = $sth->fetchrow_arrayref()) {
 		print "Found a row: user = $ref->[0], pass = $ref->[1]\n";
-	}
-	
-	$pass = <>;
-	$user = <>;
-	$sth = $dbh->prepare("SELECT COUNT(id) FROM users WHERE username = '$user' AND password ='$pass'");
-	$sth->execute();
-	$sth->bind_columns(\($count));
-	while ($sth->fetch) {
-		printf "%s\n", $count;
 	}
 	
 	
@@ -51,36 +52,8 @@
 		print "Found a row: user = $ref->[0], pass = $ref->[1]\n";
 	}
 
-<< '*/';
-	$cols = ( foo => 'foo', bar => 'bar', baz => 'baz' );
-	$tbls = ( parts => 'parts', table2 => 'table2' );
-
-	$inp_col = <>;  # get data from untrusted sources
-	$inp_tbl = $ENV{TABLE};
-
-	if ( exists( $cols{$inp_col} ) and exists( $tbls{$inp_tbl} ) {
-		$sql = "select $cols{$inp_col} from $tbls{$inp_tbl}";
-   		# now it's safe to run the query...
-	}
-	
-	
-	### INSERT some data into 'foo'###
-	#We are using $dbh->quote() for quoting the name.
-	$dbh->do("INSERT INTO foo VALUES (1, " . $dbh->quote("Tim") . ")");
-	
-	# Same thing, but using placeholders
-	$dbh->do("INSERT INTO foo VALUES (?, ?)", undef, 2, "Jochen");
-	
-	###START TEST PROGRAM###
-	# Now retrieve data from the table.
-	my $sth = $dbh->prepare("SELECT id, name FROM foo");
-	$sth->execute();
-	while (my $ref = $sth->fetchrow_arrayref()) {
-		print "Found a row: id = $ref->[0], name = $ref->[1]\n";
-	}
 	$sth->finish();
 	
 	# Disconnect from the database.
 	$dbh->disconnect();
-*/
 	
