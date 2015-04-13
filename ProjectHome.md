@@ -1,0 +1,1 @@
+This program is for demonstration and testing purposes. The database will be a simple implementation in MySQL. The database interface will be implemented in multiple languages. We will show the weaknesses in some coding techniques that enable SQL injection and XSS attacks. Then we will show methods for securing databases using improved coding techniques.
